@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    integrity="undefined" crossorigin="anonymous">
+<title>Data Informais Bisnis</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link href="../style/css/home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <img src="../assets/images/amico.png" alt="" class="bg-3">
+        <div class="formbody d-flex justify-content-start">
+            <form action="" class="form-reg">
+                <h3>
+                    Isi Data Informasi Bisnis
+                </h3>
+                <span>
+                    Masukkan data informasi bisnis Anda dengan lengkap untuk melanjutkan.
+                </span>
+                <div class="b-check">
+                    <span class="fw-bold">
+                        Jenis Toko
+                    </span>
+                    <div class=" check">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Perseorangan
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Korporasi
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-grup">
+                    <label for="exampleDataList" class="form-label fw-bold">Toko Berada di </label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Indonesia">
+                    <datalist id="datalistOptions">
+                        <option value="Indonesia">
+                        <option value="Malaysia">
+                        <option value="Singapura">
+                        <option value="Thailand">
+                        <option value="Pinoy">
+                    </datalist>
+                </div>
+                <div class="form-grup needs-validation" novalidate>
+                    <label for="validationCustom01" class="form-label fw-bold">Nama Toko</label>
+                    <input type="text" class="form-control is-valid"" id=" validationCustom01" value="Teki" required>
+                </div>
+                <div class="form-grup at">
+                    <label for="KataSandi" class="fw-bold">Alamat Toko</label>
+                    <p>Berikan informasi alamat toko Anda</p>
+                    <input class="form-control mb-2" list="datalistOptions" id="exampleDataList" placeholder="Provinsi">
+                    <datalist id="datalistOptions">
+                        <option value="Indonesia">
+                        <option value="Malaysia">
+                        <option value="Singapura">
+                        <option value="Thailand">
+                        <option value="Pinoy">
+                    </datalist>
+                    <input class="form-control mb-2" list="datalistOptions" id="exampleDataList"
+                        placeholder="Kota/Kabupaten">
+                    <datalist id="datalistOptions">
+                        <option value="Indonesia">
+                        <option value="Malaysia">
+                        <option value="Singapura">
+                        <option value="Thailand">
+                        <option value="Pinoy">
+                    </datalist>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Kecamatan">
+                    <datalist id="datalistOptions">
+                        <option value="Indonesia">
+                        <option value="Malaysia">
+                        <option value="Singapura">
+                        <option value="Thailand">
+                        <option value="Pinoy">
+                    </datalist>
+                    <textarea class="form-control" placeholder="Alamat toko, no. gedung, blok, unit, jalan."
+                        style="height: 80px"></textarea>
+                </div>
+                <div class="form-grup at">
+                    <label for="KataSandi" class="fw-bold">Informasi Kontak</label>
+                    <p>Berikan informasi kontak dari admin toko Anda</p>
+                </div>
+                <div class="form-grup">
+                    <label for="KataSandi" class="fw-bold">Nama Kontak</label>
+                    <input type="password" name="nohp" class="form-control form-control-sm"
+                        placeholder="Masukkan nama kontak">
+                </div>
+                <div class="form-grup">
+                    <label for="KataSandi" class="fw-bold">Nomor Telepon</label>
+                    <input type="password" name="nohp" class="form-control form-control-sm"
+                        placeholder="+62 123-4567-8910">
+                </div>
+                <button type="submit" class="btn-red b-mid b-daftar mt-5">
+                    Berikutnya
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

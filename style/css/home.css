@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+:root {
+    --color-text-black: #404040;
+    --color-text-konten: #616161;
+    --color-text-placeholder: #C2C2C2;
+    --color-text-footer: #757575;
+    --color-btn-red: #F95454;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+.p-6 {
+    padding: 0 6%;
+}
+
+.con-shadow {
+    box-shadow: 0px 167px 114px rgba(10, 10, 10, 0.0016), 0px 69.77px 47.63px rgba(10, 10, 10, 0.0014), 0px 37.3px 25.46px rgba(10, 10, 10, 0.0001), 0px 1px 3.15px rgba(10, 10, 10, 0.03);
+}
+
+.nav-link {
+    color: #616161;
+}
+
+
+.tebel-sedang {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.tebel-sedang:hover {
+    color: red;
+}
+
+.btn-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+
+    width: 73px;
+    height: 27px;
+    background: #F95454;
+    box-shadow: 0px 1px 2px rgba(10, 10, 10, 0.12);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+/* background */
+.background-v img:nth-child(1) {
+    position: absolute;
+    top: 500px;
+    left: 83px;
+    z-index: -2;
+}
+
+.background-v img:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    left: 3 56px;
+    z-index: -2;
+}
+
+/* --------------------------------- */
+
+/* konten */
+
+.mt-6 {
+    padding-top: 170px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.con-img {
+    width: 100%;
+    position: relative;
+}
+
+.con-img img {
+    position: absolute;
+    width: 712px;
+    height: 692px;
+    top: -40px;
+    left: 50%;
+    z-index: -1;
+}
+
+.row-title {
+    width: 600px;
+    padding-left: 6%;
+}
+
+.g-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.g-title h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 135.5%;
+    /* or 65px */
+
+
+    /* Neutral/90 */
+
+    color: #404040;
+}
+
+.g-title h6 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+
+
+    /* Neutral/70 */
+
+    color: #757575;
+}
+
+.b-link {
+    margin-top: 10%;
+    display: flex;
+    gap: 24px;
+}
+
+.b-link a {
+    text-decoration: none;
+}
+
+.b-link a:hover {
+    color: #616161;
+}
+
+.b-mid {
+    width: 238px;
+    height: 38px;
+}
+
+.white {
+    background: white;
+    color: #616161;
+}
+
+
+.fot-pt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    height: 52px;
+    box-shadow: 0px 0px 4px rgba(221, 221, 221, 0.25);
+    background: #FFFFFF;
+}
+
+.fot-pt span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+
+    /* Neutral/70 */
+
+    color: #757575;
+}
+
+/* Media Query */
+
+@media (min-width: 0px) {
+    .con-img img {
+        left: -1%;
+        width: 360 px;
+    }
+
+    .g-title h1 {
+        color: white;
+        font-size: 32px;
+    }
+
+    .b-mid {
+        padding: 6px 0;
+        font-size: 10px;
+    }
+
+    .row-title {
+        width: 90%;
+    }
+
+    .g-title h6 {
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 420px) {
+    .con-img img {
+        left: -1%;
+        width: 919px;
+    }
+
+    .g-title h1 {
+        color: white;
+        font-size: 48px;
+    }
+
+    .b-mid {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .row-title {
+        width: 90%;
+    }
+
+    .g-title h6 {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .con-img img {
+        left: -1%;
+        width: 919px;
+    }
+
+    .row-title {
+        width: 600px;
+        padding-left: 6%;
+    }
+
+    .g-title h1 {
+        color: white;
+    }
+
+    .g-title h6 {
+        color: white;
+    }
+}
+
+@media (min-width: 919px) {
+    .con-img img {
+        left: -1%;
+        width: 1000px;
+    }
+
+
+    .g-title h1 {
+        color: white;
+    }
+
+    .g-title h6 {
+        color: white;
+    }
+
+}
+
+@media (min-width: 1023px) {
+    .con-img img {
+        width: 1024px;
+        height: 692px;
+        left: 5%;
+    }
+
+    .g-title h1 {
+        color: white;
+    }
+
+    .g-title h6 {
+        color: white;
+    }
+
+
+}
+
+@media (min-width: 1127px) {
+    .con-img img {
+        width: 608px;
+        height: 692px;
+        left: 50%;
+    }
+
+    .g-title h1 {
+        color: #404040;
+    }
+
+    .g-title h6 {
+        color: #757575;
+    }
+}
+
+@media (min-width: 1286px) {
+    .con-img img {
+        width: 712px;
+        height: 692px;
+        left: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .con-img img {
+        position: absolute;
+        width: 957px;
+        height: 692px;
+    }
+
+    .b-link {
+        margin-top: 30%;
+    }
+}
+
+
+
+/* Halaman Daftar Seller Karkoon */
+
+
+.head {
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+}
+
+.form-reg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 60%;
+    padding-right: 15%;
+    margin-bottom: 160px;
+}
+
+.form-reg h3,
+span {
+    text-align: center;
+}
+
+.form-reg h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-text-black);
+}
+
+.form-reg span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--color-text-konten);
+    margin-bottom: 66px;
+
+}
+
+
+
+.form-reg span a {
+    text-decoration: none;
+    color: var(--color-btn-red);
+}
+
+.jud b {
+    font-size: 18px;
+    color: green;
+}
+
+
+.form-grup {
+    margin-bottom: 24px;
+}
+
+.form-grup label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-text-konten);
+    margin-bottom: 4px;
+}
+
+.form-grup span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* Neutral/50 */
+
+    color: var(--color-text-placeholder);
+}
+
+.form-grup input {
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    box-sizing: border-box;
+    box-shadow: inset 1px 2px 2px rgba(177, 177, 177, 0.08);
+    border-radius: 6px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+
+}
+
+.form-grup input::placeholder {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-text-placeholder);
+}
+
+.b-daftar {
+    margin-top: 16px;
+    border: none;
+    width: 100%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.form-reg a {
+    text-decoration: none;
+}
+
+
+.form-reg a img {
+    margin-right: 12px;
+}
+
+
+.form-reg a:hover {
+    color: var(--color-text-black);
+}
+
+.bg-2 {
+    position: absolute;
+    left: 0;
+    top: 186px;
+    z-index: -1;
+    transform: translateX(0px);
+}
+
+.bagi-but {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+/* Media Query Halaman Daftar Seller */
+
+@media (min-width: 0px) {
+    .bg-2 {
+        transform: translateX(-100%);
+    }
+
+    .form-reg {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .bg-3 {
+        position: absolute;
+        left: calc(1% + 10vw);
+        top: 270px;
+        z-index: -1;
+        transform: translateX(-120%);
+    }
+
+    .bagi-but {
+        width: 100%;
+        display: inline;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 470px) {
+    .bg-2 {
+        transform: translateX(-100%);
+    }
+
+    .form-reg {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .bg-3 {
+        position: absolute;
+        left: calc(1% + 10vw);
+        top: 270px;
+        z-index: -1;
+        transform: translateX(-110%);
+    }
+}
+
+@media (min-width: 750px) {
+    .bg-2 {
+        transform: translateX(-50%);
+    }
+
+    .form-reg {
+        padding-left: 50%;
+        padding-right: 15%;
+    }
+
+    .bg-3 {
+        position: absolute;
+        left: calc(1% + 1vw);
+        top: 270px;
+        z-index: -1;
+        transform: translateX(-40%);
+    }
+
+    .bagi-but {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 950px) {
+    .bg-2 {
+        transform: translateX(-30%);
+    }
+
+    .form-reg {
+        padding-left: 55%;
+        padding-right: 10%;
+    }
+
+    .bg-3 {
+        position: absolute;
+        left: calc(1% + 2vw);
+        top: 270px;
+        z-index: -1;
+        transform: translateX(-20%);
+    }
+}
+
+@media (min-width: 1150px) {
+    bg-2.bg-2 {
+        transform: translateX(-10%);
+        top: 186px;
+    }
+
+    .form-reg {
+        padding-left: 60%;
+        padding-right: 15%;
+    }
+
+    .bg-3 {
+        position: absolute;
+        left: calc(1% + 10vw);
+        top: 270px;
+        z-index: -1;
+        transform: translateX(-20%);
+    }
+}
+
+@media (min-width: 1286px) {
+    .bg-2 {
+        transform: translateX(0);
+    }
+
+    .form-reg {
+        padding-left: 60%;
+        padding-right: 15%;
+    }
+
+    .bg-3 {
+        position: absolute;
+        left: calc(1% + 10vw);
+        top: 270px;
+        z-index: -1;
+        transform: translateX(-10%);
+    }
+}
+
+@media (min-width: 1440px) {
+    .bg-2 {
+        transform: translateX(0);
+        width: 700px;
+    }
+
+    .form-reg {
+        padding-left: 60%;
+        padding-right: 15%;
+    }
+
+    .bg-3 {
+        position: absolute;
+        left: calc(1% + 20vw);
+        top: 270px;
+        z-index: -1;
+        transform: translateX(-10%);
+    }
+}
+
+
+
+.img1 {
+    display: block;
+}
+
+.img2 {
+    display: none;
+}
+
+/* ------------------- */
+
+/* Verifikasi */
+
+.box-verif {
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 100px;
+}
+
+.box-verif input {
+    height: 56px;
+    width: 56px;
+    text-align: center;
+}
+
+.kirim-ulang {
+    margin-top: 23px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Neutral/90 */
+
+    color: var(--color-text-black);
+
+}
+
+.kirim-ulang b {
+    font-size: 16px;
+    color: var(--color-btn-red);
+}
+
+/* ------------ */
+
+.check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-check {
+    margin-top: 12px;
+    margin-bottom: 21px;
+}
+
+.form-check label {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-text-black);
+}
+
+.at p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-text-footer);
+}
+
+.b-check span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-text-black);
+}
+
+.form-grup textarea {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--color-text-konten);
+}
+
+.form-grup textarea::placeholder {
+    color: var(--color-text-placeholder);
+}
+
+
+
+/* Halaman ISi data Informasi Bisnis */
+
+
+
+
+/* #TODO Page Page Pengajuan Diproses */
+.t-mid img {
+    width: 476px;
+}
+
+
+
+.t-mid h3 {
+    margin-top: 44px;
+    width: 400px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-text-black);
+}
+
+.t-mid p {
+    margin-top: 12px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--color-text-footer);
+    width: 400px;
+
+}
+
+.size-but {
+    margin-top: 96px;
+}
+
+@media(min-width: 0px) {
+    .size-but {
+        width: 90%;
+    }
+
+    .t-mid h3 {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .t-mid p {
+        width: 250px;
+        font-size: 11px;
+    }
+
+    .t-mid img {
+        width: 300px;
+    }
+}
+
+@media(min-width: 480px) {
+
+    .size-but {
+        width: 300px;
+    }
+
+    .t-mid h3 {
+        width: 400px;
+        font-size: 24px;
+    }
+
+    .t-mid p {
+        width: 400px;
+        font-size: 16px;
+    }
+
+    .t-mid img {
+        width: 476px;
+    }
+}
+
+/* ------------------------------------ */
