@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    integrity="undefined" crossorigin="anonymous">
+<title>Atur Ulang kata Sandi</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link href="../style/css/home.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <img src="../assets/images/rafiki.png" alt="" class="bg-3">
+        <div class="formbody d-flex justify-content-start">
+            <form action="" class="form-reg mt-5">
+                <h3>
+                    Atur Ulang Kata Sandi
+                </h3>
+                <span class="jud">
+                    KMasukan nomor telepon yang terdaftar untuk mendapatkan kode OTP via <b>WhatsApp</b>
+                </span>
+                <div class="form-grup">
+                    <label for="KataSandi">Kata Sandi</label>
+                    <input type="password" name="KataSandi" class="form-control form-control-sm"
+                        placeholder="Masukkan kata sandi ">
+                    <span>
+                        *Minimal 8 karakter
+                    </span>
+                </div>
+                <div class="form-grup">
+                    <label for="KataSandi">Ulangi kata sandi</label>
+                    <input type="password" name="KataSandi" class="form-control form-control-sm"
+                        placeholder="Masukkan ulang kata sandi ">
+                </div>
+                <button type="button" class="btn-red b-mid b-daftar" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Ubah kata Sandi
+                </button>
+                <span class="kirim-ulang">
+                    Kirim ulang kode dalam <b>23 detik</b>
+                </span>
+            </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-1">
+                        <div class="content-modal d-flex  flex-column align-items-center">
+                            <img src="../assets/images/check-circle.png" alt="">
+                            <h6>
+                                Berhasil Mengubah Kata Sandi
+                            </h6>
+                            <p>
+                                Silahkan masuk ke akun Anda dengan menggunakan kata sandi yang baru
+                            </p>
+
+                            <a href="" class="btn  btn-h">Masuk Sekarang </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------- -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
