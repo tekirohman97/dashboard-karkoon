@@ -10,6 +10,7 @@
     --color-btn-red: #F95454;
     --color-green-tua: #2B9484;
     --color-hitam: #0A0A0A;
+    --color-blue-text: #0170BF;
 }
 
 
@@ -405,6 +406,7 @@ span {
 
 .form-grup {
     margin-bottom: 24px;
+    position: relative;
 }
 
 .form-grup label {
@@ -732,6 +734,49 @@ span {
     color: var(--color-text-black);
 }
 
+.radio-b {
+    position: relative;
+}
+
+.radio-b input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.circle-but {
+    margin-top: 2px;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #C2C2C2;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.circle-but img {
+    position: absolute;
+    top: 4.5px;
+    left: 3px;
+}
+
+.radio-b input:checked+.circle-but {
+    border: none;
+    background-color: var(--color-btn-red);
+}
+
+.radio-b input:checked+.circle-but::before {
+    display: block;
+}
+
 .form-grup textarea {
     font-family: Nunito;
     font-style: normal;
@@ -745,6 +790,127 @@ span {
     color: var(--color-text-placeholder);
 }
 
+#but_upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+    width: 114px;
+    height: 27px;
+
+    background: #F95454;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    /* CTA */
+
+    box-shadow: 2px 4px 4px rgba(241, 26, 26, 0.19);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#but_upload:hover {
+    font-size: 10px;
+}
+
+#but_upload2 {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+    width: 114px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(241, 26, 26, 0.19);
+    border-radius: 4px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 10px;
+    display: none;
+    color: var(--color-blue-text);
+
+}
+
+#but_upload2:hover {
+    font-size: 10px;
+}
+
+#but_upload2 img {
+    margin-top: -2.5px;
+}
+
+#info-upload {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 11px;
+    color: #F95454;
+}
+
+#file-chosen {
+    margin-top: 5px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: var(--color-text-footer);
+
+}
+
+.m-min1 {
+    margin-bottom: -10px;
+}
+
+.syarat {
+    padding-left: 30px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--color-text-black);
+}
+
+.syarat b {
+    color: var(--color-btn-red);
+    font-weight: normal;
+
+}
+
+.check-s {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.jud-u {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-text-black);
+}
 
 
 /* Halaman ISi data Informasi Bisnis */
