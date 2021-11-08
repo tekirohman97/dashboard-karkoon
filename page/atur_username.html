@@ -13,32 +13,25 @@
 
 <body>
     <div class="container-fluid">
-        <img src="../assets/images/rafiki.png" alt="" class="bg-3">
+        <div class="head justify-content-start p-sm-5 ">
+            <img src="../assets/images/back-arrow.png" alt="">
+        </div>
+        <img src="../assets/images/amico3.png" alt="" class="bg-3">
         <div class="formbody d-flex justify-content-start">
             <form action="" class="form-reg mt-5">
                 <h3>
-                    Atur Ulang Kata Sandi
+                    Atur Username
                 </h3>
                 <span class="jud">
-                    KMasukan nomor telepon yang terdaftar untuk mendapatkan kode OTP via <b>WhatsApp</b>
+                    Username diawali dengan ‘@’ dan tidak boleh menggunakan ‘-’.
                 </span>
                 <div class="form-grup">
-                    <label for="KataSandi">Kata Sandi</label>
-                    <input type="password" name="KataSandi" class="form-control form-control-sm"
-                        placeholder="Masukkan kata sandi ">
-                    <span>
-                        *Minimal 8 karakter
-                    </span>
-                </div>
-                <div class="form-grup">
-                    <label for="KataSandi">Ulangi kata sandi</label>
-                    <input type="password" name="KataSandi" class="form-control form-control-sm"
-                        placeholder="Masukkan ulang kata sandi ">
-                </div>
-                <button type="button" class="btn-red b-mid b-daftar" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Ubah kata Sandi
-                </button>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="form-control form-control-sm" placeholder="@karkoon ">
+                    <button type="button" class="btn-red b-mid b-daftar" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Buat Akun
+                    </button>
             </form>
 
             <!-- Modal -->

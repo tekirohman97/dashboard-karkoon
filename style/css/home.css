@@ -513,7 +513,7 @@ span {
         left: calc(1% + 10vw);
         top: 270px;
         z-index: -1;
-        transform: translateX(-120%);
+        transform: translateX(-150%);
     }
 
     .bagi-but {
@@ -1114,3 +1114,24 @@ span {
 /* --------------------------- */
 
 /* ------------------------------------ */
+
+#text-info {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+    text-align: center;
+
+    /* Neutral/70 */
+
+    color: var(--color-text-footer);
+
+}
+
+#text-info b {
+    color: var(--color-btn-red);
+    font-weight: normal;
+}
